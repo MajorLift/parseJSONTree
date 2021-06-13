@@ -60,7 +60,7 @@ function JSONParser(input) {
   }
 
   // Performs Iterative Reverse Post-Order Traversal of the JSON object tree, 
-  // parsing and caching every composite-type object that is encountered into the bracketStack.
+  // parsing and caching every composite-type object that is encountered into the objectStack.
   // LIFO retrieval of cached objects by parent nodes calling parseArray() and parseObject()
   // will result in correctly-ordered integration of all child elements due to reverse iteration.
   // @params (String) JSON-formatted string representing, at the outermost layer, a composite data type
