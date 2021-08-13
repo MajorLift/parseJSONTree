@@ -1,6 +1,5 @@
-# JSON Parser using Tree Traversal
+# JSON Parser using AST Traversal
 
-- This implementation of the JSON parser works by:
-- performing Iterative Reverse Post-Order Traversal of the JSON Object Tree based on DFS of matching brackets .
-- The time complexity is roughly linear, and the parser is iterative rather than recursive, which enables it to process large inputs efficiently.  
-- Implementation of input sanitation is limited, with matching brackets and adherence to JSON formatting rules being assumed.
+- Features: performs Reverse Post-Order Traversal of the JSON Abstract Syntax Tree, and Iterative DFS of matching brackets.
+- Time complexity is roughly linear, and by avoiding recursive calls, the parser is able to process larger inputs efficiently. 
+- Input validation and sanitization is almost completely abstracted away. Matching brackets and adherence to JSON formatting rules is assumed.
